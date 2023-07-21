@@ -1,0 +1,169 @@
+
+
+html {
+    height:100vh;
+}
+ 
+body {
+    margin:0;
+}
+ 
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #4285f4 50%, rgba(167, 165, 165, 0.692) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+ 
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:6s;
+}
+ 
+.bg3 {
+    animation-duration:9s;
+}
+ 
+.content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    display: block;
+    min-height: 500px;
+    margin-left: 50vw;
+    margin-right: auto;
+    margin-top: 45vh;
+    min-width: 65vw;
+    text-align:center;
+    transform:translate(-50%, -50%);
+   
+}
+ 
+h1 {
+    font-family:monospace;
+    
+}
+ 
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+ 
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+
+.content p{
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    line-height: 2;
+}
+
+.bg {
+    min-height: 2350px;
+    position: absolute;
+}
+
+section h1{
+    text-align: left;
+    margin-left: 5vw;
+    font-size: 30px;
+    margin-top: -20vh;
+}
+
+section p{
+    font-size: 25px;
+    margin-left: 5vw;
+    width: 55vw;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+
+}
+
+.mkt {
+    background-color:#5e1dad;;
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    display: block;
+    min-height: 500px;
+    margin-left: 50vw;
+    margin-right: auto;
+    margin-top: 65vh;
+    min-width: 65vw;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+    color: #fff;
+}
+
+.mkt p a{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.svelte-lyhjhx a{ 
+    display: none;
+  }
+
+  button.svelte-lyhjhx.svelte-lyhjhx.svelte-lyhjhx {
+    background-color: #5e1dad !important;
+  }
+
+  .header.svelte-lyhjhx.svelte-lyhjhx.svelte-lyhjhx {
+    background-color: #fff !important;
+    
+  }
+
+  .header.svelte-lyhjhx p.svelte-lyhjhx.svelte-lyhjhx {
+    color: #000000 !important;
+  }
+  
+  @media (max-width: 767px) {
+    .content {
+        width: 100vw;
+        margin-top: 350px;
+    }
+    .content p{
+        font-size: 20px;
+        
+        text-align: center;
+        
+    }
+
+    section p {
+        width: 85vw;
+        font-size: 22px;
+    }
+
+    .mkt {
+        width: 100vw;
+        height: 800px;
+    }
+
+    .mkt p a{
+        font-size: 18px;
+        
+    }
+
+    .bg {
+        width: 100vw;
+        min-height: 2700px;
+    }
+
+  }
+  
